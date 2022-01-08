@@ -134,7 +134,7 @@ class Attacker2:
             g_temp = []
 
             for i in range(n):
-                # 进行n此input_diversity
+                # 进行n次input_diversity
                 X_adv = X + delta
                 X_adv = self.input_diversity(X_adv)
                 X_adv = F.interpolate(X_adv, (112, 112), mode='bilinear', align_corners=False)
